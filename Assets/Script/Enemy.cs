@@ -7,16 +7,23 @@ public class Enemy : MonoBehaviour
     public float moveSpd;
 
     // Reference to the MeshRenderer component attached to this object.
-    [SerializeField] private MeshRenderer rend;
+    public MeshRenderer rend;
 
     private Transform target;
 
     // To the GameObject that will be instantiated for removal object.
-    [SerializeField] private GameObject remove;
+    public GameObject remove;
 
 
     // Public property to access the Material of the MeshRenderer.
-    public Material mat { get { return rend.material; } }
+    public Material mat 
+    { 
+        get 
+        { 
+            return rend.material; 
+        } 
+    
+    }
 
     void Start()
     {
