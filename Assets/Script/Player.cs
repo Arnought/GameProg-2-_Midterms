@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private int detect;
     public LayerMask mask;
     public float area = 5f;
-    private float rotSpeed = 15f;
-
-    private int detect;
-    private GameObject target;
     private Collider[] collide = new Collider[20];
-
+    private float rotSpeed = 15f;
+    private GameObject target;
     float close;
+    
     private void Update()
     {
         target = Fire();
