@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     // Static reference to the GameManager instance, allowing easy access from other scripts.
     public static GameManager Instance;
 
-    [SerializeField] private GameObject gameOver;
+    public GameObject gameOver;
 
     int index;
 
